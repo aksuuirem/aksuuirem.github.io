@@ -32,6 +32,23 @@
 		color: #6A0D91 ;
 		}
 		/* Diğer stil kodlarınızın üzerine ekleyin */
+		.feature_inner {
+    display: flex;
+    justify-content: center; /* Sütunları yatayda ortalamak için */
+    flex-wrap: wrap; /* İçeriklerin mobilde düzgün görünmesi için satırları sardıralım */
+}
+
+.feature_item {
+    text-align: center; /* İçeriklerin metin ve görsellerinin merkezde görünmesi için */
+    margin-bottom: 30px; /* Aralarındaki boşluğu biraz daha belirgin yapalım */
+}
+
+.col-lg-5, .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Sütun içeriğini ortalamak için */
+}
 
 		.portfolio_box {
 			display: flex;
