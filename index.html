@@ -37,47 +37,46 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        body {
-            background-image: url('./img/bgimage3.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-        }
+.button_group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important; /* Butonlar arasındaki boşluk */
+    margin-top: 20px !important;
+}
 
-        a, h1, h2, h3, h4, h5, h6, p {
-            color: #6A0D91;
-        }
+.button_group .primary_btn {
+    flex: 0 0 auto !important;
+    display: inline-block !important;
+    padding: 14px 28px !important; /* Daha dengeli boyut */
+    font-size: 16px !important;     /* Okunaklı ama kaydırma yok */
+    font-weight: 600 !important;    /* Kalın yazı */
+    color: white !important;
+    background-color: #6A0D91 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: background 0.3s !important;
+}
 
-        /* Buton grubu */
-        .button_group {
-            display: flex !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
-            gap: 15px !important;
-            margin-top: 25px !important;
-        }
+.button_group .primary_btn:hover {
+    background-color: #4b0562 !important;
+}
 
-        .button_group .primary_btn {
-            flex: 0 0 auto !important;
-            display: inline-block !important;
-            padding: 20px 40px !important;  /* Buton genişliği ve yüksekliği */
-            font-size: 20px !important;      /* Yazı boyutu */
-            font-weight: 600 !important;     /* Yazıyı kalınlaştır */
-            color: white !important;
-            background-color: #6A0D91 !important;
-            border: none !important;
-            border-radius: 6px !important;
-            text-align: center !important;
-            text-decoration: none !important;
-            white-space: nowrap !important;
-            transition: background 0.3s !important;
-        }
-
-        .button_group .primary_btn:hover {
-            background-color: #4b0562 !important;
-        }
-    </style>
+/* Responsive: küçük ekranlarda butonlar alt alta */
+@media (max-width: 576px) {
+    .button_group {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .button_group .primary_btn {
+        width: 80% !important;
+        text-align: center !important;
+    }
+}
+</style>
 </head>
 <body>
     <!--================ Start Home Banner Area =================-->
