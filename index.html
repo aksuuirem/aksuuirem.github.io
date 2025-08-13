@@ -91,7 +91,7 @@
     </style>
 </head>
 <body>
-	<!--================ Start Home Banner Area =================-->
+<!--================ Start Home Banner Area =================-->
 <section class="home_banner_area" style="margin-top: 150px !important;">
     <div class="banner_inner">
         <div class="container">
@@ -103,19 +103,11 @@
                         <h5 class="text-uppercase">Bu benim kişisel web sitem</h5>
 
                         <!-- Butonlar -->
-                        <div class="d-flex justify-content-center flex-wrap" style="gap: 10px; margin-top: 15px;">
-                            <a class="primary_btn small_btn" href="mailto:iremkevseraksu@gmail.com" style="color: white;">
-                                <span>İş Teklifi İçin</span>
-                            </a>
-                            <a class="primary_btn small_btn" href="portfolio.html" target="_blank" style="color: white;">
-                                <span>Portfolyomu Görmek İçin</span>
-                            </a>
-                            <a class="primary_btn small_btn" href="sertifikalar.html" target="_blank" style="color: white;">
-                                <span>Sertifikalarımı Görmek İçin</span>
-                            </a>
-                            <a class="primary_btn small_btn" href="blog.html" target="_blank" style="color: white;">
-                                <span>Blog Yazılarımı Okumak İçin</span>
-                            </a>
+                        <div class="button_group">
+                            <a class="primary_btn" href="mailto:iremkevseraksu@gmail.com">İş Teklifi İçin</a>
+                            <a class="primary_btn" href="portfolio.html" target="_blank">Portfolyomu Görmek İçin</a>
+                            <a class="primary_btn" href="sertifikalar.html" target="_blank">Sertifikalarımı Görmek İçin</a>
+                            <a class="primary_btn" href="blog.html" target="_blank">Blog Yazılarımı Okumak İçin</a>
                         </div>
                         <!-- /Butonlar -->
 
@@ -128,16 +120,33 @@
         </div>
     </div>
 </section>
-
 <style>
-/* Küçük, yatay dikdörtgen butonlar */
-.primary_btn.small_btn {
-    padding: 6px 18px;
-    font-size: 14px;
-    border-radius: 4px;
+/* Buton grubu düzeni */
+.button_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
-.primary_btn.small_btn span {
+
+/* Buton stili */
+.button_group .primary_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white !important;
+    background-color: #6A0D91;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
     white-space: nowrap;
+    transition: background 0.3s;
+}
+
+.button_group .primary_btn:hover {
+    background-color: #4b0562;
 }
 </style>
 	<!--================ End Home Banner Area =================-->
