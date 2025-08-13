@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sertifikalarım</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    
     <style>
         body {
             background-image: url('./img/bgimage3.jpg');
@@ -70,42 +75,81 @@
     </style>
 </head>
 <body>
-
-    <div class="container mt-5">
-        <h1 class="text-center mb-5">Sertifikalarım</h1>
-        <div class="row">
-            <!-- Sertifika 1 -->
-            <div class="col-md-4">
-                <div class="feature_item">
-                    <img src="img/sertifika1.jpg" alt="Sertifika 1">
-                    <h4>Python ile Veri Analizi</h4>
-                    <p>BTK Akademi - 2024</p>
+    <!--================ Start Portfolio Area =================-->
+    <section class="portfolio_area" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main_title text-left">
+                        <h2>SERTİFİKALARIM</h2>
+                    </div>
                 </div>
             </div>
-            <!-- Sertifika 2 -->
-            <div class="col-md-4">
-                <div class="feature_item">
-                    <img src="img/sertifika2.jpg" alt="Sertifika 2">
-                    <h4>Makine Öğrenmesine Giriş</h4>
-                    <p>Kaggle - 2024</p>
+            <div class="filters-content">
+                <div class="row portfolio-grid justify-content-center">
+                    <!-- Sertifika Örneği 1 -->
+                    <div class="col-lg-4 col-md-6 all latest">
+                        <div class="portfolio_box">
+                            <div class="single_portfolio">
+                                <img class="img-fluid w-100" src="./img/ilkYardimSertifika.png" alt="">
+                                <div class="overlay"></div>
+                                <a href="./img/ilkYardimSertifika.png" class="img-gal">
+                                    <div class="icon"><span class="lnr lnr-cross"></span></div>
+                                </a>
+                            </div>
+                            <div class="short_info">
+                                <h5>ODTU Bilgeiş İlk Yardım</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sertifika Örneği 2 -->
+                    <div class="col-lg-4 col-md-6 all popular">
+                        <div class="portfolio_box">
+                            <div class="single_portfolio">
+                                <img class="img-fluid w-100" src="./img/yapayZeka1Sertifika.png" alt="">
+                                <div class="overlay"></div>
+                                <a href="./img/yapayZeka1Sertifika.png" class="img-gal">
+                                    <div class="icon"><span class="lnr lnr-cross"></span></div>
+                                </a>
+                            </div>
+                            <div class="short_info">
+                                <h5>ODTU Bilgeiş Herkes İçin Yapay Zeka-1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sertifika Örneği 3 -->
+                    <div class="col-lg-4 col-md-6 all latest">
+                        <div class="portfolio_box">
+                            <div class="single_portfolio">
+                                <img class="img-fluid w-100" src="./img/yapayZeka2Sertifika.png" alt="">
+                                <div class="overlay"></div>
+                                <a href="./img/yapayZeka2Sertifika.png" class="img-gal">
+                                    <div class="icon"><span class="lnr lnr-cross"></span></div>
+                                </a>
+                            </div>
+                            <div class="short_info">
+                                <h5>ODTU Bilgeiş Herkes İçin Yapay Zeka-2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Daha fazla sertifikayı buraya ekleyebilirsin -->
                 </div>
             </div>
-            <!-- Sertifika 3 -->
-            <div class="col-md-4">
-                <div class="feature_item">
-                    <img src="img/sertifika3.jpg" alt="Sertifika 3">
-                    <h4>Yapay Zeka ve Algoritmalar</h4>
-                    <p>BTK Akademi - 2024</p>
-                </div>
+            <!-- Geri dön butonu -->
+            <div class="text-center" style="margin-top: 30px;">
+                <a class="primary_btn" href="index.html"><span>Ana Sayfaya Dön</span></a>
             </div>
         </div>
+    </section>
+    <!--================ End Portfolio Area =================-->
 
-        <div class="text-center mt-5">
-            <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
-        </div>
-    </div>
-
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
